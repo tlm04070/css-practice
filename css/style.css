@@ -67,6 +67,42 @@ body {
     letter-spacing: 1.8rem;
     animation: moveInRight ease-in 1s; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #78DBD6, #75D896);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transform: all .5s; }
+
+#about-me-header {
+  border-bottom: 2px solid #FFAC6D; }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-med {
+  margin-bottom: 5rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -110,13 +146,32 @@ body {
   z-index: -1;
   transition: all .2s; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #75D896;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #75D896;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #78DBD6;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(120, 219, 214, 0.75), rgba(117, 216, 150, 0.75)), url(../img/coding.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -126,7 +181,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -135,7 +189,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orangered;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -151,3 +204,8 @@ body {
     width: calc(2 * ((100% - 3 * 6rem) / 4 ) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3* ((100% - 3 * 6rem) / 4 ) + (2 * 6rem)); }
+
+.section-about {
+  background-color: #efef;
+  padding: 25rem 0;
+  margin-top: -20vh; }
