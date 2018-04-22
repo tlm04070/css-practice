@@ -51,13 +51,14 @@ body{
 }
 
 #about-me-header{
-    border-bottom: 2px solid $color-tertiary;
+    border-bottom: 2px solid $color-tertiary
 }
 
 .heading-tertiary{
     font-size:$default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+    border-bottom: 1px solid $color-tertiary;
 }
 
 .paragraph{
