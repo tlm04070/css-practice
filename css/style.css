@@ -212,6 +212,34 @@ body {
   .skills:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.card {
+  perspective: 100rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    color: #fff;
+    font-size: 2rem;
+    height: 50rem;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-image: linear-gradient(to right bottom, rgba(120, 219, 214, 0.75), rgba(41, 152, 255, 0.75)); }
+    .card__side--back {
+      background-image: linear-gradient(to right bottom, rgba(117, 216, 150, 0.75), rgba(54, 224, 97, 0.75));
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg);
+    outline: 0.5rem solid #FFAC6D; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(120, 219, 214, 0.75), rgba(117, 216, 150, 0.75)), url(../img/coding.jpg);
@@ -265,3 +293,8 @@ body {
   margin-top: -10rem; }
   .section-skills > * {
     transform: skewY(7deg); }
+
+.section-projects {
+  background-color: #efef;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }
