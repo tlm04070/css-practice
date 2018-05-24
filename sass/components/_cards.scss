@@ -2,12 +2,12 @@
     perspective: 100rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 60rem;
 
 
     &__side{
         font-size: 2rem;
-        height: 50rem;
+        height: 60rem;
         transition: all .3s ease;
         position: absolute;
         top: 0;
@@ -73,7 +73,7 @@
         font-weight: 300;
         text-transform: uppercase;
         text-align: right;
-        color: $color-light;
+        color: $color-white;
         position: absolute;
         top: 12rem;
         right: 2rem;
@@ -97,7 +97,7 @@
             text-align: center;
             font-size: 1.5rem;
             padding: 1rem;
-            color: $color-light;
+            color: $color-white;
 
             &:not(:last-child){
                 border-bottom: 1px solid $color-dark;
@@ -107,5 +107,21 @@
             }
             }
         }
+    }
+    &__link{
+        text-align: center;
+    }    
+    &__link--repo{
+            text-decoration: none;
+            display: inline-block;
+            color: $color-white;
+            border-bottom: 2px solid $color-tertiary;
+            text-align: center;
+            transition: all .4s;
+            
+            &:hover{
+                background-color: $color-tertiary;
+                border-radius: 5px;
+            }
     }
 }

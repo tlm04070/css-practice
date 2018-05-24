@@ -82,8 +82,14 @@ body {
   border-bottom: 2px solid #FFAC6D; }
 
 #skills-header {
-  background-image: linear-gradient(to right, #fff, #E0E4CC);
+  color: #fff;
   border-bottom: 2px solid #FFAC6D; }
+
+#footer-header {
+  border-bottom: 2px solid #FFAC6D;
+  color: #E0E4CC;
+  border-bottom: none;
+  font-size: 2.5rem; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -218,10 +224,10 @@ body {
   perspective: 100rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 60rem; }
   .card__side {
     font-size: 2rem;
-    height: 50rem;
+    height: 60rem;
     transition: all .3s ease;
     position: absolute;
     top: 0;
@@ -254,7 +260,7 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
-    color: #E0E4CC;
+    color: #fff;
     position: absolute;
     top: 12rem;
     right: 2rem; }
@@ -272,11 +278,23 @@ body {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem;
-        color: #E0E4CC; }
+        color: #fff; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #727170; }
         .card__details ul li:first-child {
           margin-top: -1.5rem; }
+  .card__link {
+    text-align: center; }
+  .card__link--repo {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border-bottom: 2px solid #FFAC6D;
+    text-align: center;
+    transition: all .4s; }
+    .card__link--repo:hover {
+      background-color: #FFAC6D;
+      border-radius: 5px; }
 
 .header {
   height: 95vh;
@@ -321,6 +339,39 @@ body {
   .row .col-3-of-4 {
     width: calc(3* ((100% - 3 * 6rem) / 4 ) + (2 * 6rem)); }
 
+.footer {
+  background-color: #727170;
+  padding: 10rem 0;
+  font-size: 1.8rem; }
+  .footer__navigation {
+    border-top: 1px solid #E0E4CC;
+    padding-top: 2rem;
+    display: inline-block;
+    float: left;
+    font-size: 1.8rem; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 2rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #E0E4CC;
+    background-color: #727170;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #78DBD6;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+  .footer__copyright {
+    border-top: 1px solid #E0E4CC;
+    padding-top: 2rem;
+    display: inline-block;
+    color: #E0E4CC;
+    float: right; }
+
 .section-about {
   background-color: #efef;
   padding: 25rem 0;
@@ -340,5 +391,5 @@ body {
 
 .section-projects {
   background-color: #efef;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -15rem; }

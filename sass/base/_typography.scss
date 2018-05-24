@@ -55,8 +55,16 @@ body{
 }
 
 #skills-header{
-    background-image: linear-gradient(to right, $color-white, $color-light);
+    color: $color-white;
     border-bottom: 2px solid $color-tertiary 
+}
+
+#footer-header{
+    // background-image: linear-gradient(to right, $color-white, $color-light);
+    border-bottom: 2px solid $color-tertiary;
+    color: $color-light;
+    border-bottom: none;
+    font-size: $larger-default;
 }
 
 .heading-tertiary{
