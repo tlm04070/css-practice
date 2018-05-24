@@ -54,6 +54,11 @@ body{
     border-bottom: 2px solid $color-tertiary
 }
 
+#skills-header{
+    background-image: linear-gradient(to right, $color-white, $color-light);
+    border-bottom: 2px solid $color-tertiary 
+}
+
 .heading-tertiary{
     font-size:$default-font-size;
     font-weight: 700;

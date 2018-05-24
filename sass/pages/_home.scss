@@ -2,25 +2,32 @@
     background-color: $color-off-white;
     padding: 25rem 0;
     margin-top: -20vh;
+    height: 100rem;
 }
 
 .section-skills{
     padding: 20rem 0;
     background-image: linear-gradient(to right bottom, 
-    rgba($color-primary, 0.75), 
-    rgba($color-secondary, 0.75)), 
-    url(../img/coding.jpg);
+    rgba($color-primary, 0.60), 
+    rgba($color-secondary, 0.60)), 
+    url(../img/skills-2.jpg);
     background-size: cover;
-    transform: skewY(-7deg);
-    margin-top: -10rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    // transform: skewY(-5deg);
+    margin-top: -25rem;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    
 
-    & > * {
-        transform: skewY(7deg);
-    }
+    // & > * {
+    //     transform: skewY(5deg);
+    // }
 }
 
 .section-projects{
     background-color: $color-off-white;
     padding: 25rem 0 50rem 0;
-    margin-top: -10rem;
+    margin-top: -15rem;
 }

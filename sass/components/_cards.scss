@@ -4,20 +4,18 @@
     position: relative;
     height: 50rem;
 
-   
-    
 
     &__side{
-        color: #fff;
         font-size: 2rem;
         height: 50rem;
-        transition: all 1s ease;
+        transition: all .3s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         
@@ -38,13 +36,76 @@
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
-    }
-
-    &:hover &__side--back {
-        transform: rotateY(0deg);
+        // transform: rotateY(-180deg);
+        transform: scale(1.05) translateY(5px);
         outline: .5rem solid $color-tertiary;
+
+        
+        
     }
 
-    
+    // &:hover &__side--back {
+    //     transform: rotateY(0deg);
+    //    
+    // }
+
+    &__picture{
+        background-size: cover;
+        height: 23rem;
+
+        &--1{
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-secondary, 0.65), 
+            rgba($color-secondary-dark, 0.65)),
+            url(../img/nat-5.jpg);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        &--2{
+            background-image: url(../img/nat-5.img);
+        }
+        &--3{
+            background-image: url(../img/nat-5.img);
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-light;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+    }
+
+    &__heading-span {
+        padding: 1rem;
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary, 0.85), 
+            rgba($color-secondary-dark, 0.85))
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+            color: $color-light;
+
+            &:not(:last-child){
+                border-bottom: 1px solid $color-dark;
+            }
+            &:first-child{
+                margin-top: -1.5rem;
+            }
+            }
+        }
+    }
 }
